@@ -1,0 +1,6 @@
+plot3=function(){png(filename="plot3.png")
+with(hpc, {plot(ts(V7), col = "black",ylab="Energy sub metering",xlab="") 
+                         lines(ts(V8), col = "red") 
+                         lines(ts(V9), col = "blue")})
+legend("topright",legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
+dev.off()}
