@@ -1,0 +1,5 @@
+hpc <- read.table(file = "household_power_consumption.txt", 
+                  sep = ";", 
+                  skip = 66637,
+                  nrows = 2880)
+hpc$V10=strptime(paste(hpc$V1,hpc$V2),"%d/%m/%Y %H:%M:%S")
