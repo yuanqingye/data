@@ -1,0 +1,5 @@
+plot1=function(){
+  png(filename="plot1.png")
+  hist(hpc$V3,col="red",main="Global Active Power",xlab="Global Active Power(kilowatts)")
+  dev.off()
+}
